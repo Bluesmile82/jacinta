@@ -29,7 +29,7 @@ export function TestBillBoard() {
       <Billboard follow={false} position={[0, 0, 0.65]}>
         <Image transparent url="/09_brillis03.png" />
       </Billboard>
-      <Cloud scale={[0.5, 0.5, 0.5]} position={[-2, 0, -8]} speed={0.4} segments={20} color="#fcc" depthTest={false} />
+      {/* <Cloud scale={[0.5, 0.5, 0.5]} position={[-2, 0, -8]} speed={0.4} segments={20} color="#fcc" depthTest={false} /> */}
       <Sparkles {
           ...{ size: 0.6,
           opacity: 0.7,
@@ -66,6 +66,7 @@ export function TestBillBoard() {
       </Text>
       <Image transparent url="/010_mesa.png" position={[0, 0, 0.75]}/>
       <Image transparent url="/011_botes.png" position={[0, 0.05, 0.83]} />
+      {/* @ts-expect-error */}
       <Image transparent url="/012_marco.png" position={[0, 0, 0.85]} scale={[0.8, 1, 1]} />
       <OrbitControls
         minPolarAngle={Math.PI / 2}
